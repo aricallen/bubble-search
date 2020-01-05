@@ -6,11 +6,17 @@
     "activeTab",
     "webRequest",
     "webRequestBlocking",
-    "downloads",
+    "storage"
   ],
   "background": {
     "scripts": ["background.js"],
     "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "images/icon24.png",
+    "default_title": "Bubble Search",
+    "default_popup": "popup.html",
+    "options_page": "options.html"
   },
   "content_scripts": [],
   "manifest_version": 2
