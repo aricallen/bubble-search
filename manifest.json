@@ -4,20 +4,14 @@
   "description": "Managed search results via include and exclude lists of urls",
   "permissions": [
     "activeTab",
-    "webRequest",
-    "webRequestBlocking",
-    "storage"
+    "storage",
+    "tabs"
   ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": true
-  },
   "browser_action": {
     "default_icon": "images/icon24.png",
     "default_title": "Bubble Search",
-    "default_popup": "popup.html",
-    "options_page": "options.html"
+    "default_popup": "popup.html"
   },
-  "content_scripts": [],
+  "options_page": "options.html",
   "manifest_version": 2
 }

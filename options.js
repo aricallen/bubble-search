@@ -16,7 +16,7 @@ function saveOptions() {
 // restore list from chrome.storage.
 function fetchOptions() {
   chrome.storage.sync.get(['includeList'], function(items) {
-    document.getElementById('include-list').value = items.includeList;
+    document.getElementById('include-list').value = items.includeList.join('\n');
   });
 }
 

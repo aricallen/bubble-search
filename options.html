@@ -2,14 +2,40 @@
 <html>
 
 <head>
-  <title>My Test Extension Options</title>
+  <title>Bubble Search</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      font-size: 20px;
+    }
+    label {
+      margin-bottom: 24px;
+    }
+    textarea {
+      width: 50%;
+    }
+  </style>
 </head>
 
 <body>
 
-  <label>Urls in your bubble:
-    <textarea id="include-list" cols="30" rows="10"></textarea>
-  </label>
+  <div class="directions">
+    <p>Enter a single url one per line.</p>
+    <label>Do not include:</label>
+    <ul>
+      <li>the protocol i.e. <b>http(s)://</b></li>
+      <li>any <b>www</b> or subdomains unless intended to only have that sub-site included</li>
+    </ul>
+
+    <label>Good Examples:</label>
+    <ul>
+      <li><em>somebakingblog.com</em></li>
+      <li><em>othersite.com</em></li>
+    </ul>
+  </div>
+  <hr>
+  <h3>Urls in your bubble:</h3>
+  <textarea id="include-list" cols="30" rows="10"></textarea>
 
   <div id="status"></div>
   <button id="save">Save</button>

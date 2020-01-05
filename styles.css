@@ -1,0 +1,45 @@
+.popup-container {
+  padding: 24px;
+}
+label {
+  margin-bottom: 24px;
+}
+input, textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: #FA5C66;
+  width: 100%;
+  min-width: 160px;
+  margin-bottom: 24px;
+}
+input:active,
+input:focus,
+input:focus-within,
+input:hover,
+textarea:active,
+textarea:focus,
+textarea:focus-within,
+textarea:hover {
+  outline: none;
+  box-shadow: 0 0 4px #FA5C66;
+}
+button {
+  cursor: pointer;
+  padding: 8px;
+  background-color: #FA5C66;
+  border-radius: 8px;
+  font-size: 1em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+button:active,
+button:focus,
+button:focus-within,
+button:hover {
+  outline: none;
+  box-shadow: 0 0 4px #FA5C66;
+}
