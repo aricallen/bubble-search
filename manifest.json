@@ -1,0 +1,17 @@
+{
+  "name": "Bubble Search",
+  "version": "0.1",
+  "description": "Managed search results via include and exclude lists of urls",
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "downloads",
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [],
+  "manifest_version": 2
+}
